@@ -23,8 +23,7 @@ star: true
 
 <!--@include: @/snippets/reverse-tip.md-->
 
-## https://pan.quark.cn { lang="en" }
-## https://pan.quark.cn { lang="zh-CN" }
+https://pan.quark.cn
 
 :::en
 :::danger
@@ -38,12 +37,12 @@ Due to Quark Cloud Drive's speed limit issues, it can now only use local proxy f
 :::
 
 ## 1. Quark { lang="en" }
+
 ## 1. 夸克网盘 { lang="zh-CN" }
 
-
 ### Cookie { lang="en" }
-### Cookie { lang="zh-CN" }
 
+### Cookie { lang="zh-CN" }
 
 :::en
 Press F12 to open "Developer Tools", select "Network", choose any request on the left, and find the one with the `Cookie` parameter.
@@ -54,18 +53,19 @@ Press F12 to open "Developer Tools", select "Network", choose any request on the
 
 ![quark](/img/drivers/quark/quark_cookie.png)
 
-
 ### Root Folder ID { lang="en" }
-### 根文件夹ID { lang="zh-CN" }
 
+### 根文件夹ID { lang="zh-CN" }
 
 :::en
 The root directory ID is `0`.
+
 - For subfolder IDs, enter the folder and get the directory ID from the top address bar. The deeper the subdirectory, the further back the directory ID is in the address bar. To mount a specific subdirectory, just use its directory ID.
-  
+
 :::
 :::zh-CN
 根目录ID为 `0`
+
 - 子文件夹ID进入文件夹后顶部地址栏获取目录ID，如果子目录越深目录ID在地址栏越靠后，想挂载哪个子目录就写那个子目录ID就可以
 
 :::
@@ -79,10 +79,9 @@ Note: Please use Chrome browser to obtain Cookies. If you use Firefox, you may r
 注意：请使用Chrome浏览器来获取Cookies，使用Firefox获取的Cookies或仍将停留在访客并请求登录。
 :::
 
-
 ### [Online Preview/Download] is Slow? { lang="en" }
-### [在线预览/下载]很慢? { lang="zh-CN" }
 
+### [在线预览/下载]很慢? { lang="zh-CN" }
 
 :::en
 Quark Cloud Drive downloads are slow because a **membership** is required, and mounting can only (forcibly) use the `local proxy` method, which means your OpenList server needs to have high bandwidth.
@@ -107,11 +106,12 @@ Quark Cloud Drive downloads are slow because a **membership** is required, and m
 
 :::
 
-
 ### Default Download Method { lang="en" }
+
 ### 默认使用的下载方式 { lang="zh-CN" }
 
 :::en
+
 ```mermaid
 ---
 title: Which download method is used by default?
@@ -130,6 +130,7 @@ flowchart TB
 :::
 
 :::zh-CN
+
 ```mermaid
 ---
 title: 默认使用的哪种下载方式？
@@ -154,8 +155,8 @@ Note: [**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#iss
 说明：[**alist/issues/4318**](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
 :::
 
-
 ## 2. Quark TV { lang="en" }
+
 ## 2. 夸克TV { lang="zh-CN" }
 
 :::en
@@ -166,44 +167,55 @@ TV 版支持 `302`，但是只能 `访问` 和 `下载` 两个操作，其它操
 :::
 
 ### How to Add { lang="en" }
+
 ### 添加方式 { lang="zh-CN" }
 
 :::en
+
 1. Select the `QuarkTV` driver, fill in the mount path, and save.
 2. Return to the drivers page, use the mobile app to scan the QR code (if the QR code is not displayed, click `Table Layout` in the upper right corner of the driver to switch from list mode to table mode).
 3. After scanning and confirming, disable the driver, then enable the driver again to use it.
    - `Refresh token`, `Device id`, and `Query token` will be filled in automatically, no manual input required.
      - Please do not edit or modify them manually.
+
 :::
 :::zh-CN
+
 1. 选择 `夸克TV / QuarkTV` 驱动，填写挂载路径，然后保存
 2. 返回全部驱动页面，使用手机APP扫描二维码（如果不显示二维码，驱动右上角点击点击`表格布局` 从列表模式切换成表格模式）
 3. 扫码确认后，禁用驱动，再启用`驱动`即可使用
    - `Refresh token 刷新令牌`、`Device id 设备ID `、`Query token` 会自动填充，不需要人工填写
      - 请不要进行编辑手动修改
+
 :::
 
 ![](/img/drivers/tv_qrcode.png)
 
 ### Root Folder ID { lang="en" }
+
 ### 根文件夹ID { lang="zh-CN" }
 
 :::en
 The root directory ID is `0`.
+
 - For subfolder IDs, enter the folder and get the directory ID from the top address bar. The deeper the subdirectory, the further back the directory ID is in the address bar. To mount a specific subdirectory, just use its directory ID.
+
 :::
 :::zh-CN
 根目录ID为 `0`
+
 - 子文件夹ID进入文件夹后顶部地址栏获取目录ID，如果子目录越深目录ID在地址栏越靠后，想挂载哪个子目录就写那个子目录ID就可以
+
 :::
 
 ![url](/img/drivers/quark/quark_fileid.png)
 
-
 ### Default Download Method { lang="en" }
+
 ### 默认使用的下载方式 { lang="zh-CN" }
 
 :::en
+
 ```mermaid
 ---
 title: Which download method is used by default?
@@ -222,8 +234,10 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```
+
 :::
 :::zh-CN
+
 ```mermaid
 ---
 title: 默认使用的哪种下载方式？
@@ -242,9 +256,11 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```
+
 :::
 
 ## 3. Quark Open { lang="en" }
+
 ## 3. 夸克Open { lang="zh-CN" }
 
 :::en
@@ -262,23 +278,30 @@ No further tutorials are provided.
 :::
 
 ### Usage { lang="en" }
+
 ### 使用方法 { lang="zh-CN" }
 
 :::en
+
 - Select `Quark Cloud Drive (OAuth2) Authentication Login` at [here](https://api.oplist.org).
 - Fill in the AppID and SignKey you obtained to get the refresh token.
 - Due to the lack of relevant documentation, please use the **online API** for refreshing.
+
 :::
 :::zh-CN
+
 - 在[这里](https://api.oplist.org)选择`夸克网盘 (OAuth2) 验证登录`。
 - 根据自己获取到的AppID、SignKey填写，获取刷新令牌。
 - 因为缺少相关文档，请使用**在线api**进行刷新
+
 :::
 
 ### The default download method used { lang="en" }
+
 ### 默认使用的下载方式 { lang="zh-CN" }
 
 :::en
+
 ```mermaid
 ---
 title: Which download method is used by default?
@@ -295,8 +318,10 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```
+
 :::
 :::zh-CN
+
 ```mermaid
 ---
 title: 默认使用的哪种下载方式？
@@ -313,4 +338,5 @@ flowchart TB
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```
+
 :::
