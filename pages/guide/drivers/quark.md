@@ -12,25 +12,16 @@ categories:
 # A page can have multiple tags
 tag:
   - Storage
-:::zh-CN
   - Guide
-:::
   - '本地代理'
   - '302'
-:::en
 # this page is sticky in article list
-:::
 sticky: true
 # this page will appear in starred articles
-:::en
 star: true
-:::
 ---
 
-:::zh-CN
 <!--@include: @/snippets/reverse-tip.md-->
-:::
-
 
 ## https://pan.quark.cn { lang="en" }
 ## https://pan.quark.cn { lang="zh-CN" }
