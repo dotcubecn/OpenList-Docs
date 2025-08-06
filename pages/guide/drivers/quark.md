@@ -130,6 +130,7 @@ flowchart TB
 ```mermaid
 ---
 title: 默认使用的哪种下载方式？
+---
 flowchart TB
     style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
     style a2 fill:#ff7575,stroke:#333,stroke-width:4px
@@ -138,7 +139,7 @@ flowchart TB
     end
     c1[本机代理]:::someclass==强制===>a2[用户设备]
     classDef someclass fill:#f96
-    click c1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-policy"
 ```
 
 :::
@@ -195,20 +196,6 @@ The root directory ID is `0`.
 
 ![url](/img/drivers/quark/quark_fileid.png)
 
-title: 默认使用的哪种下载方式？
-flowchart TB
-    style a1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
-    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
-    subgraph ide1 [ ]
-    a1
-    end
-    a1[302]:::someclass====|默认|a2[用户设备]
-    classDef someclass fill:#f96
-    c1[本机代理]-.备选.->a2[用户设备]
-    b1[代理URL]-.备选.->a2[用户设备]
-    click a1 "../drivers/common.html#webdav-策略"
-    click b1 "../drivers/common.html#webdav-策略"
-    click c1 "../drivers/common.html#webdav-策略"
 
 ### Default Download Method { lang="en" }
 ### 默认使用的下载方式 { lang="zh-CN" }
@@ -248,24 +235,11 @@ flowchart TB
     classDef someclass fill:#f96
     c1[本机代理]-.备选.->a2[用户设备]
     b1[代理URL]-.备选.->a2[用户设备]
-    click a1 "../drivers/common.html#webdav-策略"
-    click b1 "../drivers/common.html#webdav-策略"
-    click c1 "../drivers/common.html#webdav-策略"
-```
-:::
-
-title: Which download method is used by default?
-flowchart TB
-    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
-    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
-    subgraph ide1 [ ]
-    c1
-    end
-    c1[local proxy]:::someclass==default===>a2[user equipment]
-    classDef someclass fill:#f96
-    b1[Download proxy URL]-.alternative.->a2[user equipment]
+    click a1 "../drivers/common.html#webdav-policy"
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
+```
+:::
 
 ## 3. Quark Open { lang="en" }
 ## 3. 夸克Open { lang="zh-CN" }
@@ -276,14 +250,12 @@ This "Open" is not an open interface in the true sense.
 
 No further tutorials are provided.
 :::
-:::
 
 :::zh-CN
 :::danger
 该“Open”并非真正意义上的开放接口。
 
 不提供进一步的教程。
-:::
 :::
 
 ### Usage { lang="en" }
