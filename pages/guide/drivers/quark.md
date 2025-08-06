@@ -1,7 +1,7 @@
 ---
 title:
-  en: Quark / TV
-  zh-CN: 夸克网盘 / TV
+  en: Quark / TV / Open
+  zh-CN: 夸克网盘 / TV / Open
 icon: iconfont icon-state
 # This control sidebar order
 top: 240
