@@ -30,7 +30,6 @@ star: true
 :::danger
 Due to Quark Cloud Drive's speed limit issues, it can now only use local proxy for transfers. [See details here](https://github.com/alist-org/alist/issues/4318#issuecomment-1536214188)
 :::
-:::
 
 :::zh-CN
 :::danger
@@ -63,10 +62,12 @@ Press F12 to open "Developer Tools", select "Network", choose any request on the
 :::en
 The root directory ID is `0`.
 - For subfolder IDs, enter the folder and get the directory ID from the top address bar. The deeper the subdirectory, the further back the directory ID is in the address bar. To mount a specific subdirectory, just use its directory ID.
+  
 :::
 :::zh-CN
 根目录ID为 `0`
 - 子文件夹ID进入文件夹后顶部地址栏获取目录ID，如果子目录越深目录ID在地址栏越靠后，想挂载哪个子目录就写那个子目录ID就可以
+
 :::
 
 ![url](/img/drivers/quark/quark_fileid.png)
@@ -92,6 +93,7 @@ Quark Cloud Drive downloads are slow because a **membership** is required, and m
 1. Use a server with higher bandwidth as a relay
 2. Set up at home on your own computer
 3. Or simply give up using it.
+
 :::
 :::zh-CN
 夸克云盘下载很慢是因为夸克云盘需要开通**会员**，并且挂载只能^(强制)^使用`本地代理`方式，就需要你搭建OpenList的机器有一个很高的带宽速度
@@ -102,6 +104,7 @@ Quark Cloud Drive downloads are slow because a **membership** is required, and m
 1. 换带宽高的服务器来中转
 2. 在自己家里电脑搭建
 3. 直接放弃不用.
+
 :::
 
 
